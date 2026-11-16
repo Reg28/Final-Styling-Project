@@ -1,0 +1,50 @@
+@use 'variables' as vars;
+
+@font-face {
+  font-family: 'TTLakes';
+  src: url('../fonts/comic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'TTLakes', sans-serif;
+  background-color: vars.$color-bg-body;
+  color: vars.$color-text-primary;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.page-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+}
+
+
+main {
+  position: relative;
+  min-height: 100vh;
+  color: vars.$color-text-primary;
+  width: 100%;
+  padding: 0 16px;
+  transition: all 0.3s ease;
+
+  @media (min-width: vars.$bp-tablet) {
+    padding: 0 24px;
+  }
+
+  @media (min-width: vars.$bp-desktop) {
+    margin-left: 320px;
+    width: calc(100% - 320px);
+    padding: 0 32px;
+  }
+}

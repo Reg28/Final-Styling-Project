@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/webpack.svg" type="image/svg+xml" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <div class="sidebar-overlay"></div>
+  <dv class="page-wrapper">
+    <aside class="sidebar" id="js-sidebar">
+      <header class="sidebar__header">
+        <div class="sidebar__header-group">
+          <button class="sidebar__icon-btn sidebar__icon-btn--close" id="js-menu-close" aria-label="Close menu">
+            <img src="./img/Burger Icon Container.png" alt="Close Menu">
+          </button>
+
+          <a href="#" class="sidebar__logo">
+            <img src="./img/Group.png" alt="CPS Logo">
+          </a>
+        </div>
+
+        <button class="sidebar__icon-btn sidebar__icon-btn--search" aria-label="Search">
+          <img src="./img/Search Icon Container.png" alt="Search Icon">
+        </button>
+      </header>
+
+      <nav class="sidebar__menu">
+        <ul class="sidebar__links-list">
+          <li class="sidebar__item sidebar__item--active-mobile">
+            <a href="#" class="sidebar__link">Equipment repair</a>
+          </li>
+          <li class="sidebar__item sidebar__item--active-desktop">
+            <a href="#" class="sidebar__link">Services and solutions</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Corporate Clients</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Equipment sellers</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Partners</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Manufacturers</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Our service centres</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="sidebar__footer">
+        <div class="sidebar__actions">
+          <button class="sidebar__action-btn"><img src="./img/Call Icon Container.png" alt="Call Icon"></button>
+          <button class="sidebar__action-btn"><img src="./img/Chat Icon Container.png" alt="Chat Icon"></button>
+          <button class="sidebar__action-btn"><img src="./img/Profile Icon Container.png" alt="Profile Icon"></button>
+        </div>
+
+        <address class="sidebar__address">
+          <a href="mailto:mail@cps.com" class="sidebar__email">mail@cps.com</a>
+          <a href="tel:88008908900" class="sidebar__phone">
+            <img src="./img/Phone Number.png" alt="Phone Number">
+          </a>
+        </address>
+
+        <ul class="sidebar__lang-list">
+          <li class="sidebar__lang-item"><a href="#" class="sidebar__lang-link sidebar__lang-link--active">RU</a></li>
+          <li class="sidebar__lang-item"><a href="#" class="sidebar__lang-link">EN</a></li>
+          <li class="sidebar__lang-item"><a href="#" class="sidebar__lang-link">CH</a></li>
+        </ul>
+      </footer>
+    </aside>
+
+
+    <main>
+
+      <header class="main-header">
+        <div class="main-header__left">
+          <button class="sidebar__icon-btn" id="js-menu-open" aria-label="Open side menu">
+            <img src="./img/Menu Icon.png" alt="Open Menu">
+          </button>
+          <a href="#" class="main-header__logo">
+            <img src="./img/Group.png" alt="CPS Logo">
+          </a>
+        </div>
+
+        <div class="main-header__right">
+          <button class="main-header__action-btn">
+            <img src="./img/Repair icon.png" alt="Submit request">
+          </button>
+          <button class="main-header__action-btn">
+            <img src="./img/Status icon.png" alt="Repair status">
+          </button>
+        </div>
+      </header>
+
+      <!-- SERVICES SECTION -->
+
+      <section class="services">
+        <header class="services__header">
+          <h1 class="services__title">Services and support</h1>
+
+          <div class="services__actions">
+            <a href="#" class="services__action">
+              <span>Submit a request</span>
+              <img src="./img/Repair icon.png" alt="" class="service__img">
+            </a>
+
+            <a href="#" class="services__action">
+              <span>Repair status</span>
+              <img src="./img/Status icon.png" alt="" class="service__img">
+            </a>
+          </div>
+        </header>
+
+        <nav class="services__navigation">
+          <ul class="services__menu">
+            <li>
+              <a href="#" class="services__button services__button--active">
+                <span class="services__btn-text-mobile">Devices we repair</span>
+                <span class="services__btn-text-desktop">Brands we repair</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="services__button">
+                Additional services
+              </a>
+            </li>
+            <li>
+              <a href="#" class="services__button">
+                Service prices
+              </a>
+            </li>
+            <li>
+              <a href="#" class="services__button">
+                Service center addresses
+              </a>
+            </li>
+            <li>
+              <a href="#" class="services__button">
+                Special prices
+              </a>
+            </li>
+            <li class="services__reviews">
+              <a href="#" class="services__button">
+                Reviews
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="services__content">
+
+          <div class="services__text">
+            <p class="services__paragraph">
+              We are an authorised service centre for Dell equipment repairs.
+              Only with us can you repair your Dell laptop with the official
+              manufacturer's warranty.
+            </p>
+
+            <p class="services__paragraph services__paragraph--hidden-mobile" id="js-services-text-hidden">
+              We have been successfully operating since 1992 and have earned
+              a reputation as a reliable partner, as evidenced by our large
+              number of loyal customers. We take pride in the fact that
+              clients come to us through recommendations and, in turn,
+              recommend us to their family and friends.
+            </p>
+
+            <a href="#" class="services__read-more" id="js-services-read-more">
+              <img src="./img/Expand Icon.png" alt="" id="js-services-read-more-icon">
+              <span id="js-services-read-more-text">Read more</span>
+            </a>
+          </div>
+
+          <img src="./img/CPS Logo.svg" alt="CPS service centre" class="services__image">
+
+        </div>
+
+      </section>
+
+      <!-- BRANDS SECTION -->
+
+
+      <section class="brand">
+        <div>
+          <h2 class="brand__text">REPAIR OF EQUIPMENT FROM VARIOUS BRANDS</h2>
+        </div>
+
+        <div class="brand__list swiper" id="js-brand-swiper">
+          <div class="swiper-wrapper">
+            <a href="#lenovo" class="brand__card brand__card--lenovo swiper-slide"><img src="./img/Lenovo.png"
+                alt="Lenovo"><img src="./img/Arrow.png" alt="Arrow"></a>
+            <a href="#Samsung" class="brand__card brand__card--samsung swiper-slide"><img src="./img/Samsung.png"
+                alt="Samsung"><img src="./img/Arrow.png" alt="Arrow"></a>
+            <a href="#Apple" class="brand__card brand__card--apple swiper-slide"><img src="./img/Apple.png"
+                alt="Apple"><img src="./img/Arrow.png" alt="Arrow"></a>
+            <a href="#ViewSonic" class="brand__card brand__card--viewsonic swiper-slide"><img src="./img/ViewSonic.png"
+                alt="ViewSonic"><img src="./img/Arrow.png" alt="Arrow"></a>
+            <a href="#Bosch" class="brand__card brand__card--bosch swiper-slide"><img src="./img/Bosch.png"
+                alt="Bosch"><img src="./img/Arrow.png" alt="Arrow"></a>
+            <a href="#HP" class="brand__card brand__card--hp swiper-slide"><img src="./img/HP.png" alt="HP"><img
+                src="./img/Arrow.png" alt="Arrow"></a>
+            <a href="#Acer" class="brand__card brand__card--acer swiper-slide"><img src="./img/Acer.png" alt="Acer"><img
+                src="./img/Arrow.png" alt="Arrow"></a>
+            <a href="#SONY" class="brand__card brand__card--apple swiper-slide"><img src="./img/Sony.png"
+                alt="SONY"><img src="./img/Arrow.png" alt="Arrow"></a>
+
+            <a href="#lenovo" class="brand__card brand__card--hidden swiper-slide"><img src="./img/Lenovo.png"
+                alt="Lenovo"><img src="./img/Arrow.png" alt="Arrow"></a>
+            <a href="#Samsung" class="brand__card brand__card--hidden swiper-slide"><img src="./img/Samsung.png"
+                alt="Samsung"><img src="./img/Arrow.png" alt="Arrow"></a>
+            <a href="#Apple" class="brand__card brand__card--hidden swiper-slide"><img src="./img/Apple.png"
+                alt="Apple"><img src="./img/Arrow.png" alt="Arrow"></a>
+          </div>
+          <div class="swiper-pagination brand__pagination"></div>
+
+        </div>
+        <div class="brand__show-all-btn">
+          <button id="brand__show-more-btn">
+            <img src="./img/Expand Icon.png" alt="Expand Icon" class="brand__dropdown" id="brand__btn-icon">
+            <span id="brand__btn-text">Show all</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="repair">
+        <div class="repair__header">
+          <h2 class="repair__title">REPAIR OF VARIOUS TYPES OF EQUIPMENT</h2>
+        </div>
+
+        <div class="repair__list swiper" id="js-repair-swiper">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <a href="#laptop-repair" class="repair__card swiper-slide">
+              <span class="repair__card-text">Laptop repair</span>
+              <div class="repair__card-arrow">
+                <img src="./img/Arrow.png" alt="Go to laptop repair" class="repair__arrow-icon">
+              </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="#tablet-repair" class="repair__card swiper-slide">
+              <span class="repair__card-text">Tablet repair</span>
+              <div class="repair__card-arrow">
+                <img src="./img/Arrow.png" alt="Go to tablet repair" class="repair__arrow-icon">
+              </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="#pc-repair" class="repair__card swiper-slide">
+              <span class="repair__card-text">PC repair</span>
+              <div class="repair__card-arrow">
+                <img src="./img/Arrow.png" alt="Go to PC repair" class="repair__arrow-icon">
+              </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="#monitor-repair" class="repair__card swiper-slide">
+              <span class="repair__card-text">Monitor repair</span>
+              <div class="repair__card-arrow">
+                <img src="./img/Arrow.png" alt="Go to monitor repair" class="repair__arrow-icon">
+              </div>
+            </a>
+
+            <!-- Cards 5 to 9 (Visible in mobile slider, hidden on tablet/desktop until expanded) -->
+            <a href="#laptop-repair-extra" class="repair__card repair__card--hidden swiper-slide">
+              <span class="repair__card-text">Laptop repair</span>
+              <div class="repair__card-arrow">
+                <img src="./img/Arrow.png" alt="Go to laptop repair" class="repair__arrow-icon">
+              </div>
+            </a>
+
+            <a href="#tablet-repair-extra" class="repair__card repair__card--hidden swiper-slide">
+              <span class="repair__card-text">Tablet repair</span>
+              <div class="repair__card-arrow">
+                <img src="./img/Arrow.png" alt="Go to tablet repair" class="repair__arrow-icon">
+              </div>
+            </a>
+
+            <a href="#pc-repair-extra" class="repair__card repair__card--hidden swiper-slide">
+              <span class="repair__card-text">PC repair</span>
+              <div class="repair__card-arrow">
+                <img src="./img/Arrow.png" alt="Go to PC repair" class="repair__arrow-icon">
+              </div>
+            </a>
+
+            <a href="#monitor-repair-extra" class="repair__card repair__card--hidden swiper-slide">
+              <span class="repair__card-text">Monitor repair</span>
+              <div class="repair__card-arrow">
+                <img src="./img/Arrow.png" alt="Go to monitor repair" class="repair__arrow-icon">
+              </div>
+            </a>
+
+            <a href="#laptop-repair-extra-2" class="repair__card repair__card--hidden swiper-slide">
+              <span class="repair__card-text">Laptop repair</span>
+              <div class="repair__card-arrow">
+                <img src="./img/Arrow.png" alt="Go to laptop repair" class="repair__arrow-icon">
+              </div>
+            </a>
+
+          </div>
+          <div class="swiper-pagination repair__pagination"></div>
+        </div>
+
+        <!-- Toggle Trigger Button Area -->
+        <div class="repair__actions">
+          <button class="repair__toggle-btn" id="repair__show-more-btn">
+            <img src="./img/Expand Icon.png" alt="Expand Icon" class="repair__toggle-icon" id="repair__btn-icon">
+            <span class="repair__toggle-text" id="repair__btn-text">Show all</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- PRICES SECTION -->
+
+      <section class="prices">
+        <div class="prices__header">
+          <p class="prices__title" role="heading" aria-level="2">SERVICE PRICES</p>
+        </div>
+
+        <div class="prices__table-header">
+          <span>Repair services</span>
+          <span>Price</span>
+          <span>Deadline</span>
+        </div>
+
+        <div class="prices__list swiper" id="js-prices-swiper">
+          <div class="swiper-wrapper">
+            <!-- Row 1 -->
+            <div class="prices__card swiper-slide">
+              <div class="prices__column">
+                <span class="prices__label">Repair services</span>
+                <span class="prices__value prices__value--mobile">Testing with a technical report</span>
+                <span class="prices__value prices__value--desktop">Diagnostics</span>
+              </div>
+
+              <div class="prices__column">
+                <span class="prices__label">Price</span>
+                <span class="prices__value">Free of charge</span>
+              </div>
+
+              <div class="prices__column">
+                <span class="prices__label">Term</span>
+                <span class="prices__value prices__value--mobile">30-120 mins</span>
+                <span class="prices__value prices__value--desktop">30 min</span>
+              </div>
+
+              <div class="prices__action">
+                <button class="prices__order-btn" type="button">
+                  <span class="prices__order-text">ORDER</span>
+                  <span class="prices__order-icon-wrapper">
+                    <img src="./img/Arrow White.png" alt="" class="prices__order-icon">
+                  </span>
+                </button>
+              </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="prices__card swiper-slide">
+              <div class="prices__column">
+                <span class="prices__label">Repair services</span>
+                <span class="prices__value">Display replacement</span>
+              </div>
+              <div class="prices__column">
+                <span class="prices__label">Price</span>
+                <span class="prices__value">1,000 ₽</span>
+              </div>
+              <div class="prices__column">
+                <span class="prices__label">Deadline</span>
+                <span class="prices__value">30-120 min</span>
+              </div>
+              <div class="prices__action">
+                <button class="prices__order-btn">
+                  <span class="prices__order-text">ORDER</span>
+                  <div class="prices__order-icon-wrapper">
+                    <img src="./img/Arrow White.png" alt="Arrow" class="prices__order-icon">
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="prices__card swiper-slide">
+              <div class="prices__column">
+                <span class="prices__label">Repair services</span>
+                <span class="prices__value">Polyphonic speaker replacement</span>
+              </div>
+              <div class="prices__column">
+                <span class="prices__label">Price</span>
+                <span class="prices__value">1,000 ₽</span>
+              </div>
+              <div class="prices__column">
+                <span class="prices__label">Deadline</span>
+                <span class="prices__value">30-120 min</span>
+              </div>
+              <div class="prices__action">
+                <button class="prices__order-btn">
+                  <span class="prices__order-text">ORDER</span>
+                  <div class="prices__order-icon-wrapper">
+                    <img src="./img/Arrow White.png" alt="Arrow" class="prices__order-icon">
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="prices__card swiper-slide">
+              <div class="prices__column">
+                <span class="prices__label">Repair services</span>
+                <span class="prices__value">Testing with a technical report</span>
+              </div>
+              <div class="prices__column">
+                <span class="prices__label">Price</span>
+                <span class="prices__value">1,000 ₽</span>
+              </div>
+              <div class="prices__column">
+                <span class="prices__label">Deadline</span>
+                <span class="prices__value">30-120 min</span>
+              </div>
+              <div class="prices__action">
+                <button class="prices__order-btn">
+                  <span class="prices__order-text">ORDER</span>
+                  <div class="prices__order-icon-wrapper">
+                    <img src="./img/Arrow White.png" alt="Arrow" class="prices__order-icon">
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="prices__card swiper-slide">
+              <div class="prices__column">
+                <span class="prices__label">Repair services</span>
+                <span class="prices__value">Software replacement</span>
+              </div>
+              <div class="prices__column">
+                <span class="prices__label">Price</span>
+                <span class="prices__value">1,000 ₽</span>
+              </div>
+              <div class="prices__column">
+                <span class="prices__label">Deadline</span>
+                <span class="prices__value">30-120 min</span>
+              </div>
+              <div class="prices__action">
+                <button class="prices__order-btn">
+                  <span class="prices__order-text">ORDER</span>
+                  <div class="prices__order-icon-wrapper">
+                    <img src="./img/Arrow White.png" alt="Arrow" class="prices__order-icon">
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination prices__pagination"></div>
+        </div>
+
+        <div class="prices__footer-info">
+          <p class="prices__disclaimer">
+            All prices include VAT. The cost of repair is indicated for a single service. To receive a commercial
+            proposal
+            for ongoing maintenance, please submit a request.
+          </p>
+          <a href="#proposal" class="prices__proposal-link">
+            <span>Get a commercial<br>proposal</span>
+            <img src="./img/Arrow Pink.png" alt="Link arrow" class="prices__proposal-arrow">
+          </a>
+        </div>
+      </section>
+
+      <!-- FOOTER SECTION -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__left">
+            <p class="footer__text">© 2019 CPS</p>
+            <p class="footer__text">Developed by the Apesong team</p>
+          </div>
+          <div class="footer__center">
+            <a href="#privacy" class="footer__link">Privacy Policy</a>
+          </div>
+          <div class="footer__right">
+            <p class="footer__text">The information on this page is not a public offer</p>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+    </div>
+</body>
+
+</html>
